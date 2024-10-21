@@ -17,7 +17,7 @@ export const MovieDetail = () => {
      // console.log("The genre is "+movie.genres);
     }
     fetchMovie();
-  },[])
+  },[params.id])
 
   useEffect(()=>{
     document.title=`${movie.title}/cinemate`;
@@ -62,7 +62,7 @@ export const MovieDetail = () => {
         </p>
         <p className='my-4'>
           <span className='mr-2 font-bold'>IMDB Code :</span>
-          <a href={`https://www.imdb.com/title/${movie.imdb_id}`} target='_blank' rel="no" className='underline underline-offset-1'>{movie.imdb_id}</a>
+          <a href={`https://www.imdb.com/title/${movie.imdb_id}`} target='_blank' rel="noreferrer" className='underline underline-offset-1'>{movie.imdb_id}</a>
         </p>
         </div>
       </section>
