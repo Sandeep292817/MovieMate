@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import PageError from '../assets/404NotFound.jpg';
 import { useTitle } from '../hooks/useTitle';
 import { Link } from 'react-router-dom';
